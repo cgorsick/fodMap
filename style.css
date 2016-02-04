@@ -1,3 +1,7 @@
 .background-image {
-	background-image: url("pirateMap.jpg");
+	background-image: url("file:///c:/cgors/desktop/fodMap/map/pirateMap.jpg");
+}
+
+h1 {
+	font-family: impact, charcoal, sans-serif;
 }
