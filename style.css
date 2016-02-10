@@ -1,5 +1,9 @@
 .background-image {
-	background-image: url("file:///c:/cgors/desktop/fodMap/map/pirateMap.jpg");
+	background-image: url("map/pirateMap.jpg");
+    background-size: 100%;
+    width: 1080px;
+    height: 920px;
+    background-repeat: no-repeat;
 }
 
 h1 {
