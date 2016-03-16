@@ -6,34 +6,42 @@
 	<title>fodMap to a Healthy Life</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<h1>fodMap to a Healthy Life</h1>
-	<h2>Follow the map to find out if a fodMap lifestyle is right for you!</h2>
-	<button type="button" class="btn btn-primary btn-lg outline">What are fodMaps?</button>
-    <button type="button" class="btn btn-primary btn-lg outline">FodMaps and Your Body</button>
-    <button type="button" class="btn btn-primary btn-lg outline">Elimination Phase</button>
-    <button type="button" class="btn btn-primary btn-lg outline"><a href="/foodCharts.html">Safe Food Charts</a></button>
-</div>
-</head>
-
-<body>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 	<script type="text.javascript" src="app.js"></script>
-<div>
-	<div class="background-image">
 
-	<h1>Welcome to the introduction</h1>
+
+	<div class="collapse navbar-collapse" ng-controller="HeaderController">
+    <ul class="nav navbar-default" role="navigation">
+        <li class="navbar-text center" ng-class="{ active: isActive('/')}"><a href="/">Home</a></li>
+        <li class="navbar-text center" ng-class="{ active: isActive('/aboutFodmaps')}"><a href="/aboutFodmaps.html">What are Fodmaps?</a></li> 
+        <li class="navbar-text center" ng-class="{ active: isActive('/foodCharts')}"><a href="/foodCharts.html">Safe Food Charts</a></li>
+        <li class="navbar-toggle navbar-text pull-right" ng-class="{ active: isActive('/contact')}"><a href="/contact.html">Contact</a></li>
+    </ul>
+</div>
+<div ng-view></div>
+
+</div>
+
+</head>
+	<body class="body">
+	<div>
+		<h1>fodMap to a Healthy Life</h1>
+		<h2>Follow the map to find out if a fodMap lifestyle is right for you!</h2>
+	<div>
+
+		<h1>Welcome to the introduction</h1>
 
  
-</div>
+	</div>
         
-</div>
-</body>
+	</div>
+	</body>
 
 
-<foot>
-<div>
-	<a href="resources.html">Resources</a>
-	<a href="contact.html">Contact</a>
-</div>
-</foot>
+	<foot>
+	<div>
+
+	</div>
+	</foot>
+
 </html>
