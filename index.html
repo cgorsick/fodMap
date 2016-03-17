@@ -1,47 +1,60 @@
 <!DOCTYPE html>
-<html ng-app="fodMap">
+<html lang="en" ng-app="App">
 
-<head>
-<div>
-	<title>fodMap to a Healthy Life</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-	<script type="text.javascript" src="app.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Navbar Demo</title>
+    <!-- Css -->
+    <link data-require="bootstrap-css@3.3.1" data-semver="3.3.1" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- JavaScript -->
+    <script data-require="angular.js@1.3.15" data-semver="1.3.15" src="https://code.angularjs.org/1.3.15/angular.js"></script>
+    <script data-require="angular-ui-bootstrap@0.12.0" data-semver="0.12.0" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.min.js"></script>
+    <script data-require="ui-router@0.2.13" data-semver="0.2.13" src="//rawgit.com/angular-ui/ui-router/0.2.13/release/angular-ui-router.js"></script>
+    <script src="script.js"></script>
+    <script src="ui-navbar.js"></script>
+    
+  </head>
 
+  <body>
+    <div ng-controller="NavigationController">
+      <nav class="nav navbar-collapsed" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'">
+          
 
-	<div class="collapse navbar-collapse" ng-controller="HeaderController">
-    <ul class="nav navbar-default" role="navigation">
+        <ul class="nav navbar-nav">
         <li class="navbar-text center" ng-class="{ active: isActive('/')}"><a href="/">Home</a></li>
         <li class="navbar-text center" ng-class="{ active: isActive('/aboutFodmaps')}"><a href="/aboutFodmaps.html">What are Fodmaps?</a></li> 
         <li class="navbar-text center" ng-class="{ active: isActive('/foodCharts')}"><a href="/foodCharts.html">Safe Food Charts</a></li>
-        <li class="navbar-toggle navbar-text pull-right" ng-class="{ active: isActive('/contact')}"><a href="/contact.html">Contact</a></li>
-    </ul>
-</div>
-<div ng-view></div>
-
-</div>
-
-</head>
-	<body class="body">
-	<div>
-		<h1>fodMap to a Healthy Life</h1>
-		<h2>Follow the map to find out if a fodMap lifestyle is right for you!</h2>
-	<div>
-
-		<h1>Welcome to the introduction</h1>
-
- 
-	</div>
-        
-	</div>
-	</body>
-
-
-	<foot>
-	<div>
-
-	</div>
-	</foot>
+     
+            <li class="navbar-text pull-right" dropdown="">
+              <a href="#" dropdown-toggle="">
+                        Contact
+                                                                                                      >
+             
+              </a>
+              <tree tree="tree"></tree>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </nav>
+    </div>
+    
+    <!-- Hook here the partials -->
+    <div ui-view=""></div>
+    
+  </body>
 
 </html>
