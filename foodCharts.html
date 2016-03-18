@@ -8,10 +8,7 @@
   <script type="text/javascript" src="flickr.js"></script>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-</head>
-<body>
-
-<div class="collapse navbar-collapse" ng-controller="HeaderController">
+  <div class="collapse navbar-collapse" ng-controller="HeaderController">
     <ul class="nav navbar-nav">
         <li class="navbar-text center" ng-class="{ active: isActive('/')}"><a href="/">Home</a></li>
         <li class="navbar-text center" ng-class="{ active: isActive('/aboutFodmaps')}"><a href="/aboutFodmaps.html">What are Fodmaps?</a></li> 
@@ -20,6 +17,11 @@
     </ul>
 </div>
 <div ng-view></div>
+
+</head>
+<body class="body">
+
+
 
 
   <div class="grid-container centered">
@@ -31,7 +33,7 @@
             <p>Click to view the charts!</p>
           </div>
           <ul class="filter-select">
-            <li><button>fodmapchart</button></li>
+            <li><button>cat</button></li>
           </ul>
         </div>
 

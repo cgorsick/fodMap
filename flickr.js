@@ -5,7 +5,7 @@ $(document).ready(function() {
 		var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 		var fodmapchart = $(this).text();
 		var flickrOptions = {
-			tags: fodmapchart,
+			tags: cat,
 			format: "json"
 		};
 		function displayPhotos(data) {

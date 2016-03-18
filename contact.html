@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<title>What are fodMaps Exactly?</title>
+	
+
+</head>
+<div>
+
+<div class="collapse navbar-collapse" ng-controller="HeaderController">
+    <ul class="nav navbar-nav">
+        <li class="navbar-text center" ng-class="{ active: isActive('/')}"><a href="/">Home</a></li>
+        <li class="navbar-text center" ng-class="{ active: isActive('/aboutFodmaps')}"><a href="/aboutFodmaps.html">What are Fodmaps?</a></li> 
+        <li class="navbar-text center" ng-class="{ active: isActive('/foodCharts')}"><a href="/foodCharts.html">Safe Food Charts</a></li>
+        <li class="navbar-text pull-right" ng-class="{ active: isActive('/contact')}"><a href="/contact.html">Contact</a></li>
+    </ul>
+</div>
+<div ng-view></div>
+
+
+	<body class="body">
+		<h1>Contact Information</h2>
+
+	</body>
+
+
+
+</div>

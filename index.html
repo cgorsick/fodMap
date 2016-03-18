@@ -4,33 +4,46 @@
 <head>
 <div>
 	<title>fodMap to a Healthy Life</title>
-	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-	<script type="text.javascript" src="app.js"></script>
+	
+  <script type="text/javascript" src="controllers.js"></script>
+  
+  <script type="text/javascript" src="app.js"></script>
+     
+
+
 
 
 	<div class="collapse navbar-collapse" ng-controller="HeaderController">
-    <ul class="nav navbar-default" role="navigation">
+    <ul class="nav navbar-nav">
         <li class="navbar-text center" ng-class="{ active: isActive('/')}"><a href="/">Home</a></li>
         <li class="navbar-text center" ng-class="{ active: isActive('/aboutFodmaps')}"><a href="/aboutFodmaps.html">What are Fodmaps?</a></li> 
         <li class="navbar-text center" ng-class="{ active: isActive('/foodCharts')}"><a href="/foodCharts.html">Safe Food Charts</a></li>
-        <li class="navbar-toggle navbar-text pull-right" ng-class="{ active: isActive('/contact')}"><a href="/contact.html">Contact</a></li>
-    </ul>
+        <li class="navbar-text pull-right" ng-class="{ active: isActive('/contact')}"><a href="/contact.html">Contact</a></li>
+        </ul>
 </div>
 <div ng-view></div>
-
 </div>
 
 </head>
 	<body class="body">
-	<div>
+	<div class="jumbotron">
 		<h1>fodMap to a Healthy Life</h1>
-		<h2>Follow the map to find out if a fodMap lifestyle is right for you!</h2>
-	<div>
+	</div>
+  <div>
 
-		<h1>Welcome to the introduction</h1>
+		<h2>Welcome to the introduction</h1>
+    <div ng-controller="StoreController as myApp">
+      <h3> {{store.product.name}} </h3>
+      <h4> {{store.product.price}} </h4>
+      <p> {{store.product.description}} </p>
+      <button> Add to Cart </button>
+    </div>
 
+    
  
 	</div>
         
