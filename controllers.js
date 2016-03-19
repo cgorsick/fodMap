@@ -5,5 +5,10 @@
     };
  }
 
+$('#viewport').html($(window).width());
 
+$(window).resize(function () {
+    var viewportWidth = $(window).width();
+    $('#viewport').html(viewportWidth + "px");
+});
 
