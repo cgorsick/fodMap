@@ -17,7 +17,7 @@
 
 
 
-	<div class="collapse navbar-collapse" ng-controller="HeaderController">
+	<div class="collapse navbar-collapse uib-dropdown-toggle" ng-controller="HeaderController">
     <ul class="nav navbar-nav">
         <li class="navbar-text center" ng-class="{ active: isActive('/')}"><a href="/">Home</a></li>
         <li class="navbar-text center" ng-class="{ active: isActive('/aboutFodmaps')}"><a href="/aboutFodmaps.html">What are Fodmaps?</a></li> 
@@ -28,6 +28,23 @@
 <div ng-view></div>
 </div>
 
+
+<div class="panel panel-default hidden-lg hidden-md hidden-sm">
+          
+            <div class="panel-body">
+                <div class="row">
+                   
+                        <button type="button" onclick="location.href='index.html'" class="form-control btn-primary hidden-lg hidden-md hidden-sm">Home</button><br/>
+                         <button type="button" onclick="location.href='aboutFodmaps.html'" class="form-control btn-primary hidden-lg hidden-md hidden-sm">About Fodmaps</button><br/>
+                         <button type="button" onclick="location.href='foodCharts.html'" class="form-control btn-primary hidden-lg hidden-md hidden-sm">Safe Food Charts</button><br/>
+                         <button type="button" onclick="location.href='contact.html'"
+                         class="form-control btn-primary hidden-lg hidden-md hidden-sm">Contact</button><br/>
+                    </div>
+                    <div class="col-lg-6"  style="margin:0 auto;"  >
+                      </div>
+            </div>
+        </div>
+
 </head>
 	<body class="body">
 	<div class="jumbotron">
@@ -36,12 +53,12 @@
   <div>
 
 		<h2>Welcome to the introduction</h1>
-    <div ng-controller="StoreController as myApp">
+   <!-- <div ng-controller="StoreController as myApp">
       <h3> {{product.name}} </h3>
       <h4> {{store.product.price}} </h4>
       <p> {{store.product.description}} </p>
       <button> Add to Cart </button>
-    </div>
+    </div>  -->
 
     
  
